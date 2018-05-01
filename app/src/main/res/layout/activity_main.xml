@@ -25,6 +25,7 @@
             android:id="@+id/morty_button"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:background="#00000000"
             android:src="@drawable/morty_face" />
 
     </LinearLayout>
@@ -42,6 +43,7 @@
             android:id="@+id/rick_button"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:background="#00000000"
             android:src="@drawable/rick_face" />
     </LinearLayout>
 
@@ -55,6 +57,7 @@
         android:layout_marginRight="7dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
+        android:background="#00000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

@@ -9,6 +9,9 @@ import com.google.android.youtube.player.YouTubeInitializationResult;
 import com.google.android.youtube.player.YouTubePlayer;
 import com.google.android.youtube.player.YouTubePlayerView;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Morty extends YouTubeBaseActivity {
 
     YouTubePlayerView mYouTubePlayerView;
@@ -24,7 +27,10 @@ public class Morty extends YouTubeBaseActivity {
         mOnInitializedListener = new YouTubePlayer.OnInitializedListener() {
             @Override
             public void onInitializationSuccess(YouTubePlayer.Provider provider, YouTubePlayer youTubePlayer, boolean b) {
-                youTubePlayer.loadVideo("pk6tONDf3s0");
+                List<String> videoList = new ArrayList<>();
+                videoList.add("638t6Hr4cIU");
+                videoList.add("jXlEvyQB9yo");
+                youTubePlayer.loadVideos(videoList);
             }
 
             @Override

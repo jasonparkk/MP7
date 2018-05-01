@@ -10,6 +10,9 @@ import com.google.android.youtube.player.YouTubeInitializationResult;
 import com.google.android.youtube.player.YouTubePlayer;
 import com.google.android.youtube.player.YouTubePlayerView;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Rick extends YouTubeBaseActivity {
 
     YouTubePlayerView r1YouTubePlayerView;
@@ -26,7 +29,11 @@ public class Rick extends YouTubeBaseActivity {
         r1OnInitializedListener = new YouTubePlayer.OnInitializedListener() {
             @Override
             public void onInitializationSuccess(YouTubePlayer.Provider provider, YouTubePlayer youTubePlayer, boolean b) {
-                youTubePlayer.loadVideo("xw8Ez_XKfZ8");
+                List<String> videoList = new ArrayList<>();
+                videoList.add("xw8Ez_XKfZ8");
+                videoList.add("HvFboLsE5oI");
+                videoList.add("B8oD1MYoUWs");
+                youTubePlayer.loadVideos(videoList);
             }
 
             @Override
